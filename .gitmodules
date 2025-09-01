@@ -1,0 +1,6 @@
+[submodule "trpl-zh-cn"]
+	path = trpl-zh-cn
+	url = https://github.com/KaiserY/trpl-zh-cn.git
+[submodule "rust-by-example-cn"]
+	path = rust-by-example-cn
+	url = https://github.com/rust-lang-cn/rust-by-example-cn.git
