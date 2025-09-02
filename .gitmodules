@@ -4,3 +4,6 @@
 [submodule "rust-by-example-cn"]
 	path = rust-by-example-cn
 	url = https://github.com/rust-lang-cn/rust-by-example-cn.git
+[submodule "rust-course"]
+	path = rust-course
+	url = https://github.com/sunface/rust-course.git

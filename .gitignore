@@ -5,6 +5,7 @@ target/
 # 各个文档项目的构建输出
 trpl-zh-cn/book/
 rust-by-example-cn/book/
+rust-course/book/
 
 # 系统文件
 .DS_Store
@@ -22,3 +23,5 @@ Thumbs.db
 
 # 日志文件
 *.log
+
+

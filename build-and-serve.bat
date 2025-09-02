@@ -27,6 +27,7 @@ REM --- 主构建流程 ---
 REM 使用 call 命令调用下面的 :build_book 子程序来构建每个文档
 call :build_book "trpl-zh-cn" "Rust 程序设计语言"
 call :build_book "rust-by-example-cn" "通过例子学 Rust"
+call :build_book "rust-course" "Rust 语言圣经"
 REM 如果有更多文档，在这里继续添加 call 命令即可
 REM call :build_book "new-book-folder" "新书的名字"
 
@@ -143,3 +144,5 @@ echo ✅ 完成: "%BOOK_NAME%" 构建成功。
 REM popd 会安全地返回到 pushd 之前的位置
 popd
 goto :eof
+
+

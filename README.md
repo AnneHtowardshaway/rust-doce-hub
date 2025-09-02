@@ -26,6 +26,13 @@
 - **GitHub**: [rust-lang-cn/rust-by-example-cn](https://github.com/rust-lang-cn/rust-by-example-cn)
 - **访问路径**: `./rust-by-example-cn/book/`
 
+### 3. Rust 语言圣经 (rust-course)
+- **描述**: 最全面的 Rust 中文教程，从入门到精通
+- **版本**: 最新版
+- **状态**: 中文原创
+- **GitHub**: [sunface/rust-course](https://github.com/sunface/rust-course)
+- **访问路径**: `./rust-course/book/`
+
 ## 🛠️ 安装和使用
 
 ### 前置要求
@@ -96,7 +103,11 @@ my-docs-hub/
 │   ├── book/               # 构建后的 HTML 文件（不提交到 Git）
 │   ├── src/                # 源文档文件
 │   └── book.toml           # mdBook 配置
-└── rust-by-example-cn/     # 通过例子学 Rust 中文版
+├── rust-by-example-cn/     # 通过例子学 Rust 中文版
+│   ├── book/               # 构建后的 HTML 文件（不提交到 Git）
+│   ├── src/                # 源文档文件
+│   └── book.toml           # mdBook 配置
+└── rust-course/            # Rust 语言圣经
     ├── book/               # 构建后的 HTML 文件（不提交到 Git）
     ├── src/                # 源文档文件
     └── book.toml           # mdBook 配置
@@ -119,6 +130,12 @@ cd rust-by-example-cn
 git pull origin master
 mdbook build
 cd ..
+
+# 更新 rust-course
+cd rust-course
+git pull origin main
+mdbook build
+cd ..
 ```
 
 ### 更新所有文档
@@ -129,6 +146,7 @@ git submodule update --remote
 # 重新构建所有文档
 cd trpl-zh-cn && mdbook build && cd ..
 cd rust-by-example-cn && mdbook build && cd ..
+cd rust-course && mdbook build && cd ..
 ```
 
 ## 🎨 自定义样式

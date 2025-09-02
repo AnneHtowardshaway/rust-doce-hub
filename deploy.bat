@@ -19,6 +19,7 @@ REM --- 构建所有文档 ---
 echo 📚 构建所有文档...
 call :build_book "trpl-zh-cn" "Rust 程序设计语言"
 call :build_book "rust-by-example-cn" "通过例子学 Rust"
+call :build_book "rust-course" "Rust 语言圣经"
 
 echo.
 echo 🎉 所有文档构建完成！
@@ -48,6 +49,11 @@ if exist "trpl-zh-cn\book" (
 if exist "rust-by-example-cn\book" (
     echo 📖 复制通过例子学 Rust 文档...
     xcopy "rust-by-example-cn\book\*" "dist\rust-by-example-cn\" /e /i /y
+)
+
+if exist "rust-course\book" (
+    echo 📖 复制 Rust 语言圣经文档...
+    xcopy "rust-course\book\*" "dist\rust-course\" /e /i /y
 )
 
 echo.
@@ -87,3 +93,5 @@ if errorlevel 1 (
 echo ✅ 完成: "%BOOK_NAME%" 构建成功。
 popd
 goto :eof
+
+
